@@ -9,6 +9,7 @@ export default class Paddles {
     this.paddleHeight = paddleHeight;
     this.x = initialX;
     this.y = initialY;
+    this.score = 0;
     this.speed = SPEED;
     document.addEventListener("keydown", event =>{
         switch(event.key){
@@ -21,7 +22,14 @@ export default class Paddles {
         }
     });
     }
+    
 
+    increaseScore(){
+        this.score ++ ;
+    }
+getScore(){
+    return this.score;
+}
 
 
     moveUP(){
@@ -33,6 +41,19 @@ export default class Paddles {
     moveDown(){
         this.y = Math.min(this.boardHeight-this.paddleHeight, this.y + this.speed);
 
+    }
+
+
+
+
+    getCoordinates(){
+        const walls = {
+            left: this.x,
+            top: this.y,
+            right: this.x + this.paddleWidth,
+            bottom: this.y + this.paddleHeight
+        }
+        return walls;
     }
 render(svg){
     let rect = document.createElementNS(SVG_NS, 'rect');
