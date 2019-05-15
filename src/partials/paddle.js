@@ -31,6 +31,10 @@ getScore(){
     return this.score;
 }
 
+setSpeed(speed){
+    this.speed = speed;
+
+}
 
     moveUP(){
         this.y = Math.max(10, this.y -this.speed);

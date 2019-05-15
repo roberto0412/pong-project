@@ -13,6 +13,7 @@ render (svg, score) {
     text.setAttributeNS(null, "x", this.x);
     text.setAttributeNS(null, "y", this.y);
     text.textContent = score;
+    // text.textContent = win;
     svg.appendChild(text);
 }
 
