@@ -1,41 +1,15 @@
-# Pong Game Starter
+Pong-game
+during this project we built a working pong game utilzing only javascript
 
-A starter project for a basic pong game using SVGs.
 
-## Setup
+the pong game consist of :
+differnt modules where used and the import function was used to import the files to the main file,
 
-Ensure you have [Node.js](https://nodejs.org/en/) installed first.
+we used a ES2015  syntax objects with constructors, properties, and methods.
+there were esentially 6 modules which were used.
 
-**Install dependencies:**
 
-`$ npm install`
+at the end of this project:
+i felt more familiar using javascript classes, functions and methods.
+the proyect brought to me another level of understanding to these concepts.
 
-**Run locally with the Parcel dev server:**
-
-`$ npm start`
-
-Once you run the start command you can access your project at http://localhost:3000.
-
-Read more about the [Parcel web application bundler here](https://parceljs.org/).
-
-## Deploy
-
-The deployment workflow for this project will be a bit different from what you've used when deploying simple static websites.
-
-To deploy your finished Pong project as a GitHub page, you must first **update the `predeploy` script in the `package.json` file with the name of your repo.**
-
-For example, if your repo URL is:
-
-https://github.com/bob/pong-project
-
-Update the `predeploy` script as follows:
-
-```json
-"predeploy": "rm -rf dist && parcel build index.html --public-url /pong-project",
-```
-
-Once you have done this, you can run:
-
-`$ npm run deploy`
-
-Now check out your deployed site 🙂
